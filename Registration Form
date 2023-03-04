@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class RegistrationForm {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+        // Print welcome message
+        System.out.println("Welcome to the Registration Form\n");
+        
+        // Get user information
+        System.out.print("Enter your first name: ");
+        String firstName = input.nextLine();
+        
+        System.out.print("Enter your last name: ");
+        String lastName = input.nextLine();
+        
+        System.out.print("Enter your email address: ");
+        String email = input.nextLine();
+        
+        System.out.print("Enter your phone number: ");
+        String phone = input.nextLine();
+        
+        // Print confirmation message
+        System.out.println("\nThank you for registering!");
+        System.out.println("Your information:");
+        System.out.println("Name: " + firstName + " " + lastName);
+        System.out.println("Email: " + email);
+        System.out.println("Phone: " + phone);
+        
+        // Close input stream
+        input.close();
+    }
+}
